@@ -102,7 +102,7 @@ export default defineComponent({
       popoverVisible: ref(false),
       captStatus: ref('default'),
       activeClass: computed(() => {
-        return `wg-cap-active__${captStatus.value}`
+        return `wg-cap-active__${state.captStatus}`
       }),
       style: computed(() => {
         return `width:${props.width}; height:${props.height};`
